@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link id="styles" rel="stylesheet" href="pixel-art-jquery.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+  <div id="bg">
+    <div id="net">
+      <div id="wrapper"></div>
+    </div>
+  <div id="color_switcher_wrap">
+
+      <div id="color_switcher">
+          <label for="body" id="choose_color">color :</label>
+          <input type="color" id="choose_color_body" name="body"
+              value="#000000">
+
+              <datalist id="presetColors">
+              <option id="opt" style="background-color: #ff0000;" value="#ff0000"/></option>
+              <option id="opt" style="background-color: #0400ff;" value="#0400ff"/></option>
+              <option id="opt" style="background-color: #00ff14;" value="#00ff14"/></option>
+              <option id="opt" style="background-color: #fbff00;" value="#fbff00"/></option>
+              <option id="opt" style="background-color: #b96600;" value="#b96600"/></option>
+              <option id="opt" style="background-color: #00adff;" value="#00adff"/></option>
+              </datalist>
+      </div>
+      <div id="load_file">
+      <input type="file" id="files" name="files[]" multiple />
+      <output id="list"></output>
+      </div>
+      <div id="button_save"><input type="button" id="input_button_save" name="save" value="save"></div>
+      <div id="button_clear"><input type="button" id="input_button_clear" name="clear" value="clear"></div>
+    </div>
+  </div>
+    <script type="text/javascript" src="jQuery-v3.6.0.js"></script>
+    <script type="text/javascript" src="pixel-art-jquery.js"></script>
+  </body>
+
+</html>
